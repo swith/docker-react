@@ -7,4 +7,4 @@ before_install:
   - docker build -t swither/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run CI=true swither/docker-react -- --coverage
+  - docker run -e CI=true swither/docker-react -- --coverage
